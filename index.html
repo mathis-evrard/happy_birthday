@@ -22,11 +22,32 @@
         0 0 10px #FFD700,
         3px 3px 6px rgba(0,0,0,0.8);
     }
+    /* BOUTON SON COULEUR DORÉE */
+    .music-btn {
+      font-size: 1.5rem; 
+      padding: 20px 40px; 
+      background: linear-gradient(45deg, #FFD700, #FFA500, #FF6B35);
+      color: #1a1a1a;
+      border: 4px solid #FFED4A;
+      border-radius: 50px; 
+      cursor: pointer; 
+      box-shadow: 0 10px 30px rgba(255,215,0,0.5);
+      transition: all 0.3s;
+      font-weight: bold;
+      text-shadow: none;
+    }
+    .music-btn:hover { 
+      transform: scale(1.1); 
+      box-shadow: 0 15px 40px rgba(255,215,0,0.7);
+      background: linear-gradient(45deg, #FFA500, #FF6B35, #FFD700);
+    }
+    .music-btn:active { transform: scale(0.98); }
   </style>
 </head>
 <body>
   <h1>Happy Birthday</h1>
-  <audio controls style="margin-top: 30px;color: red;">
+  <h2><a href="kdo">YES</a></h2>
+  <audio id="musique">
     <source src="saavane-happy-birthday-254480.mp3" type="audio/mpeg">
     Votre navigateur ne supporte pas l'audio.
   </audio>
