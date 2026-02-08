@@ -5,7 +5,3 @@ body {
   background-position: top; /* centré */
   background-repeat: no-repeat;
 }
-audio::-webkit-media-controls-play-button {
-  background-color: gold;      
-  border-radius: 50%;
-}
