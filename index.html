@@ -46,7 +46,8 @@
 </head>
 <body>
   <h1>Happy Birthday</h1>
-  <h2><a href="kdo">YES</a></h2>
+  <h2>click the present to open it</h2>
+  <h3><a href="kdo">YES</a></h3>
  <!-- BOUTON DORÉ PERSONNALISÉ -->
   <button class="music-btn" onclick="playMusic()">
     🎵 Happy Birthday !
@@ -57,5 +58,15 @@
   </audio>
     Votre navigateur ne supporte pas l'audio.
   </audio>
+  <script>
+    function playMusic() {
+      document.getElementById('musique').play();
+    }
+    <img src="kdo.jpg" alt="cadeau" style="
+    width: 250px; height: auto;
+    border: 5px solid gold;
+    border-radius: 20px;
+    margin-top: 30px;
+  "><a href="kdo"> </a>
 </body>
 </html>
