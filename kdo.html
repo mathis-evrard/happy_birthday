@@ -1,51 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday dad</title>
-  <link rel="stylesheet"href="style.css">
+  <title>Aston Villa vs Tottenham</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background-image: url("villa-park.jpg");
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
+      
+      /* CENTRE TOUT */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      font-family: system-ui, sans-serif;
+      color: white;
     }
-    vs {
-  font-size: 10rem;
-  font-weight: 700;
-}
-   
+    
+    /* LOGOS + VS */
+    .match-line {
+      display: flex;
+      align-items: center;
+      gap: 60px;  /* espace entre logo-VS-logo */
+      margin-bottom: 2rem;
+    }
+    
+    .match-line img {
+      width: 180px;  /* taille uniforme */
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+    
+    .vs {
+      font-size: 6rem;  /* ENORME VS */
+      font-weight: 900;
+      color: #FFD700;   /* OR */
+      text-shadow: 3px 3px 6px black;
+    }
+    
     h1 {
-     font-size: 2rem;    
-      font-weight: 400;    /* gras */
-      margin-bottom: 1rem;
-      margin-left: 450px;
-      margin-top: 50px;
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     }
-   h2 {
-     font-size: 2rem;    
-      font-weight: 400;    /* gras */
-      margin-bottom: 1rem;
-      margin-left: 450px;
-      margin-top: 30px;
-   }
-    </style>
+    
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0.25rem 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+  </style>
 </head>
 <body>
-    <img src="logo-svg.jpg" alt="Aston-Villa" style=" width: 250px; height: auto;
-    border-radius: 20px;
-    margin-top: 30px;
-      margin-left: 25%;"
-  > 
-  <span class="vs">VS</span>
-    <img src="Tottenham-Hotspur-Logo-2006-2013.jpg" alt="Tottenham"style=" width: 500px; height: auto;
-    border-radius: 20px;
-    margin-top: 30px;
-      margin-right: 25%;">
-    <h1> Saturday 2 May</h1>
-    <h2> Villa Park</h2>
+  <!-- LIGNE LOGOS + VS -->
+  <div class="match-line">
+    <img src="logo-svg.jpg" alt="Aston Villa">
+    <span class="vs">VS</span>
+    <img src="Tottenham-Hotspur-Logo-2006-2013.jpg" alt="Tottenham">
+  </div>
+  
+  <h1>Saturday 2 May</h1>
+  <h2>Villa Park</h2>
 </body>
 </html>
-
